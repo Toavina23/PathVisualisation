@@ -1,0 +1,17 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto;
+    grid-gap: 1em;
+}
+.menu-row{
+    background-color: aqua;
+}
+
+.grid-row{
+    display: flex;
+    /* background-color: brown; */
+    min-height: 650px;
+    justify-content: center;
+    align-items: center;
+}
