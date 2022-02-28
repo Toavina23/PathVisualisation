@@ -35,16 +35,18 @@ export const Grid = () => {
     return rows;
   };
   return (
-    <div className="gridContainer">
-      {grid.map((row, rowID) => {
+    <table className="gridContainer">
+        <tbody>
+        {grid.map((row, rowID) => {
         return (
-          <div key={rowID}>
+          <tr key={rowID} className="row">
             {row.map((node, nodeID) => {
               return <Node nodeState={node} key={nodeID}></Node>;
             })}
-          </div>
+          </tr>
         );
       })}
-    </div>
+        </tbody>
+    </table>
   );
 };

@@ -1,0 +1,8 @@
+.gridContainer{
+    border-collapse: collapse !important;
+    border-spacing: 0;
+    margin: 0;
+}
+.row{
+    margin: 0;
+}

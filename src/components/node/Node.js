@@ -4,8 +4,8 @@ import './Node.css';
 export const Node = (props) =>{
     const [nodeState, setNodeState] = useState(props.nodeState);
     return (
-        <div className={`node `}>
+        <td className={`node `}>
 
-        </div>
+        </td>
     );
 }
