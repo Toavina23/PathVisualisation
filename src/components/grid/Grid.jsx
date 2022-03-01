@@ -4,7 +4,7 @@ import { Node } from "../node/Node";
 const numRows = 20;
 const numCol = 50;
 
-export const Grid = () => {
+export const Grid = (props) => {
   const [grid, setGrid] = useState([]);
 
   useEffect(() => {
@@ -16,11 +16,22 @@ export const Grid = () => {
     return {
       row: row,
       col: col,
-      isStart: false,
-      isEnd: false,
+      isStart: props.data.startNode.row === row && props.data.startNode.col === col,
+      isEnd: props.data.finishNode.row === row && props.data.finishNode.col === col,
       isWall: false,
     };
   };
+
+  //know who is beiing selected
+  const handleSelection = (e) => {
+    for (let row = 0; row < numRows; row++) {
+
+    }
+  }
+  //handle start position change
+  const handleStartPositionChange = () => {
+        
+  }
 
   //for the grid initialization
   const initGrid = () => {
@@ -34,6 +45,7 @@ export const Grid = () => {
     }
     return rows;
   };
+
   return (
     <table className="gridContainer">
         <tbody>

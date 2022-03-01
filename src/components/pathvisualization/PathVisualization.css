@@ -5,7 +5,8 @@
     grid-gap: 1em;
 }
 .menu-row{
-    background-color: aqua;
+    /* background-color: aqua; */
+    margin-top: 40px;
 }
 
 .grid-row{
